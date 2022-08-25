@@ -1,0 +1,19 @@
+.table-allUser{
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.mat-elevation-z8 {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: fit-content;
+  }

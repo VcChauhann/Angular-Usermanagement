@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+.nameField{
+    width: 70%;
+    margin: 5px;
+}
+
+.ageField{
+    width: 20%;
+    margin-left: 15px;
+}
+
+.fourty-width{
+    margin: 2px;
+    width: 40%;
+}
+
+.companyField{
+    margin-left: 10px;
+}
+.full-width{
+    width: 100%;
+}

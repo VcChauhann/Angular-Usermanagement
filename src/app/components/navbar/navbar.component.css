@@ -1,0 +1,18 @@
+
+.navbar{
+    background-color: white;
+    color: black;
+}
+
+.navbar-brand{
+    color: black;
+    margin: auto 20px;
+    font-weight: 500;
+}
+nav mat-button-toggle{
+    border: none;
+    margin: auto 10px;
+}
+mat-button-toggle-group{
+    border: none;
+}

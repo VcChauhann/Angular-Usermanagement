@@ -1,0 +1,40 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" >
+    <mat-form-field appearance="outline" class="nameField">
+      <mat-label>Name</mat-label>
+      <input name="fullName" [(ngModel)]="userDetail.name" matInput >
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="ageField">
+      <mat-label>Age</mat-label>
+      <input type="number" name="age" [(ngModel)]="userDetail.age" matInput >
+    </mat-form-field>
+
+    <mat-form-field class="fourty-width" hintLabel="Max 10 characters" appearance="outline">
+      <mat-label>Telephone</mat-label>
+      <span matPrefix>+91 &nbsp;</span>
+      <input #telInput type="number" name="phNumber"
+       [(ngModel)]="userDetail.phoneNumber" maxlength="10" matInput>
+      <mat-icon matSuffix>phone</mat-icon>
+      <mat-hint align="end">{{telInput.value?.length || 0}}/10</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field  class="fourty-width companyField" appearance="outline" >
+      <mat-label>Company</mat-label>
+      <input  name="company" [(ngModel)]="userDetail.company" matInput >
+      <mat-icon matSuffix>home</mat-icon>
+      
+    </mat-form-field>
+
+    <mat-form-field  class="full-width" appearance="outline" >
+      <mat-label>Company</mat-label>
+      <input type="email"  name="email" [(ngModel)]="userDetail.email" matInput >
+      <mat-icon matSuffix>mail</mat-icon>
+      
+    </mat-form-field>
+
+      <button type="submit"  mat-raised-button color="primary">submit</button>
+      
+  </form>
+</div>

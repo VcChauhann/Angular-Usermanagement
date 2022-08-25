@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" routerLink="/">UserDetails</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse" id="navbarSupportedContent">
+      
+      <mat-button-toggle-group  aria-label="Font Style">
+        <mat-button-toggle value="bold" routerLink="/enterDetail">Details</mat-button-toggle>
+        <mat-button-toggle value="bold" routerLink="/allUsers">Users</mat-button-toggle>
+  </mat-button-toggle-group>
+     
+    </div>
+  </nav>
+  
